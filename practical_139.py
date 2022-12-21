@@ -1,16 +1,7 @@
-# def wordBreak(self, s, words):
-#     ok = [True]
-#     for i in range( len(s)+1):
-#         ok += any(ok[j] and s[j:i] in words for j in range(i)),
-#     return ok[-1]
+# Word break
 
-# ans=wordBreak("leetcode","leet","code")
-# print(ans)
-
-# def wordBreak(self, s, wordDict):
-
-s="leetcode"
-word=["leet","code"]
+s="le"
+word=["le","code"]
 
 n = len(s)
 r = [[False for _ in range(n+1)] for _ in range(n)]
@@ -28,8 +19,8 @@ for i in range(0, n):
             
             r[i][j] = r[i-1][i] or r[i-1][j]
             print(r[i-1][i])
-            # print("i : ",i)
-            # print("j : ",j)
+            print("i : ",i)
+            print("j : ",j)
             # print( r[i-1][i] ,"or", r[i-1][j])
             # print("elif : ",s[i:j])
 

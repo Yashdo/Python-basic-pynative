@@ -9,22 +9,17 @@ class Node:
         if self.data is None:
             self.data= data
         else:
-            if data<self.data:
-                if self.data is None:
-                    self.data=data
-                else:
-                     self.left.insert(data)
-            
-            elif data>self.data:
-                if self.data is None:
-                    self.data =data
-                else:
-                     self.right.insert(data)
-root=Node (30)
-root.insert(9)
-root.insert(20)
-root.insert(15)
-root.insert(7)
+            if data<self.data and self.left != None:
+                self.left.insert(data)
+                
+            elif data>self.data and self.right != None:
+                self.right.insert(data)
 
+            return data
 
-            
+root=Node (1)
+print(root.insert(100))
+print(root.insert(200))
+print(root.insert(150))
+print(root.insert(7))
+print(root.left.data)

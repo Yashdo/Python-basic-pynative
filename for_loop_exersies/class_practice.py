@@ -25,25 +25,53 @@
 
 """Use a single inharitance"""
 
-class Student1:
-    def __init__(self,id,name,language) :
+# class Student1:
+#     def __init__(self,id,name,language) :
         
-        self.id = id
-        self.name=name
-        self.language=language
+#         self.id = id
+#         self.name=name
+#         self.language=language
     
-    def info(self):
+#     def info(self):
 
-        print(f'Student id {self.id} , Student name {self.name} , Student languages {self.language} ')
+#         print(f'Student id {self.id} , Student name {self.name} , Student languages {self.language} ')
 
-class Student2(Student1):
-    def student(self,salary):
+# class Student2(Student1):
+#     def student(self,salary):
 
-        # super().__init__(id,name,language)
+#         # super().__init__(id,name,language)
+#         self.salary=salary
+
+#         print(f'Student id {self.id} , Student name {self.name} , Student languages {self.language} , salary {self.salary} ')
+
+# stu=Student2(1,"Yash","python")
+# stu.student(2000)
+# stu.info()
+
+"""Multiline inharitance"""
+
+class Company:
+
+    def Employee(self,id,name):
+        self.id=id
+        self.name=name
+
+class employee1(Company):
+
+    def emoloyee_salary(self,salary):
+        # super().Employee(salary)
         self.salary=salary
+        
+class employee2(employee1):
 
-        print(f'Student id {self.id} , Student name {self.name} , Student languages {self.language} , salary {self.salary} ')
+    def employee_language(self,language):
+        # super().Employee(language)
+        self.language = language
 
-stu=Student2(1,"Yash","python")
-stu.student(2000)
-stu.info()
+info=employee2()
+info.Employee(1,"yash")
+info.emoloyee_salary(20000)
+info.employee_language("python")
+print(info.id, info.name , info.salary,info.language)
+
+

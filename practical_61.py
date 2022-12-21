@@ -1,7 +1,14 @@
 head = [1,2,3,4,5]
-string=str(head)
-k = 2
-for i in string:
-    rev=reversed(i)
-    print(rev)
-    
+list1=[]
+
+class ListNode:
+    def __init__(self, val=0, next=None,k=2):
+        self.val = val
+        self.next = next
+        
+        while k > val:
+            val = next(k)
+            print(val)
+            k+=1
+
+

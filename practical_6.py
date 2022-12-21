@@ -19,10 +19,7 @@ zigzag.extend(app_list1)
 # zigzag.extend(app_list3)
     
     
-
-
-
-print("".join(zigzag))
+print(" ".join(zigzag))
 
     
     

@@ -1,4 +1,4 @@
-#  Write a Python program to print alphabet pattern 'A'.
+#  Write a Python program to print alphabet pattern O.
 
 result_str=""
 for row in range(0,7):

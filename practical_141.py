@@ -11,19 +11,16 @@ a=Linkedlist(5)
 head=a.head
 pos=a.pos
     
+slow = fast = head
 
-slowPointer = fastPointer = head
-        
-while slowPointer and fastPointer:
-    fastPointer = fastPointer.next
-    if fastPointer == slowPointer:
+while fast and slow :
+    fast = fast.next
+    slow = slow.next
+    
+    if fast == slow:
         print("True")
-    elif not fastPointer:
-         print("False")
-    slowPointer = slowPointer.next
-    fastPointer = fastPointer.next
-else:
-     print("False")
+    else :
+        print("False")
 
 # n1=Linkedlist(3)
 # n2=Linkedlist(2)
