@@ -19,16 +19,10 @@ for i in range(0, n):
             
             r[i][j] = r[i-1][i] or r[i-1][j]
             print(r[i-1][i])
-            print("i : ",i)
-            print("j : ",j)
-            # print( r[i-1][i] ,"or", r[i-1][j])
-            # print("elif : ",s[i:j])
-
+          
         else:
             r[i][j] = r[i-1][j]
             print(r[i-1][j])
 
-# print(r)
-print(r[i][j])
-# print (r[n-1][n])
-# print(wordBreak("leetcode","leet","code"))
+# print(r[i][j])
+print (r[n-1][n])
