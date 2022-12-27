@@ -13,12 +13,10 @@ ans=add(243,564)
 convert_str=str(ans)
 rev=reversed(convert_str)
 
-# convert_int=int(rev)
-
 
 convert_list=list(rev)
-# convert_list=(rev for i in convert_list) 
-print(convert_list )
+
+print(*convert_list )
 
 
 

@@ -5,8 +5,8 @@ matrix = [[9,9,4],
           [2,1,1]]
 
 lenth=len(matrix)
-next=None
+print(lenth)
 
-for row in range(lenth):
-    for col in range(lenth):
-        
+for row in range(1,lenth+1):
+    for col in range(1,lenth+1):
+        print(col)
