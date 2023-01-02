@@ -15,7 +15,6 @@ n2 = Linkedlist(2)
 n3 = Linkedlist(0)
 n4 = Linkedlist(-4)
 
-# n1.data = n1.data
 n1.next = n2.data
 n2.next = n3.data
 n3.next = n4.data

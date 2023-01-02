@@ -13,21 +13,14 @@ salary = [1000, 2000, 3000]
 lenth = len(salary)
 min_salary = salary[0]
 max_salary = salary[0]
-mini=0
-maxi=0
+
 for i in range(lenth):
 
-    if min_salary < salary[i]:
-        salary[i] = min_salary
-        # mini = salary[i]
-    
-    if max_salary > salary[i]:
-        salary[i] = max_salary
-        # maxi = salary[i]
-print(salary)
+    if min_salary > salary[i]:
+        min_salary=salary[i]
 
-# print(minimum)
-# print(maximum)
+    if max_salary < salary[i]:
+         max_salary=salary[i]
 
-# avg = (minimum + maximum) / 2
-# print(avg)
+avg = (min_salary + max_salary) / 2
+print(avg)
