@@ -4,8 +4,8 @@ from pydantic import BaseModel
 
 app = FastAPI()
 
-oauth_scheme = OAuth2PasswordBearer(tokenUrl="token")
+oauth_scheme1 = OAuth2PasswordBearer(tokenUrl="token")
 
 @app.get("/item")
-def read_item(token: str = Depends(oauth_scheme)):
+def read_item(token: str = Depends(oauth_scheme1)):
     return {"token": token}
